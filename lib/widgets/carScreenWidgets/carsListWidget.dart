@@ -64,8 +64,7 @@ class _CarsListWidgetState extends State<CarsListWidget> {
                 },
                 child: ListTile(
                   contentPadding: EdgeInsets.zero,
-                  //TODO:: change the icon theme for dark mode
-                  leading: const Icon(Icons.drive_eta_sharp),
+                  leading: Icon(Icons.drive_eta_sharp,color: Theme.of(context).iconTheme.color,),
                   title: Text(
                     '${carsList[index].properties.manufacturer} - ${carsList[index].properties.model}',
                   ),
