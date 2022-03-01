@@ -40,6 +40,8 @@ import './screens/bluetoothDevicesScreen.dart';
 import './providers/locationStatusProvider.dart';
 import './providers/bluetoothStatusProvider.dart';
 
+//TODO: Implement the coding chanllenge
+
 Future<void> main() async {
   // Ensures all the future functions of main() finish before launching the app
   WidgetsFlutterBinding.ensureInitialized();
