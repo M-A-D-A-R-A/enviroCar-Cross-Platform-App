@@ -40,6 +40,9 @@ import './screens/bluetoothDevicesScreen.dart';
 import './providers/locationStatusProvider.dart';
 import './providers/bluetoothStatusProvider.dart';
 
+//TODO: Implement the coding chanllenge
+// 1. Implement a simple UI that informes the user about the collected data
+//    -> for each model do i need to implement a new UI to show the collected data or?
 Future<void> main() async {
   // Ensures all the future functions of main() finish before launching the app
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,3 +1,4 @@
+import 'collected_data_screens/userDataScreen.dart';
 import 'package:logger/logger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -83,6 +84,21 @@ class _IndexState extends State<Index> {
             scale: 10,
           ),
           centerTitle: true,
+          actions: [
+            IconButton(
+              icon: const Icon(
+                Icons.drag_indicator_sharp,
+                color: Colors.white,
+              ),
+              onPressed: () {
+                _logger.i('Going to track details screen');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => UserDataScreen()),
+                );
+              },
+            ),
+          ],
         ),
         body: IndexedStack(
           index: _currentIndex,
